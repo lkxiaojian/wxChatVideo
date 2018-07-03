@@ -1,0 +1,17 @@
+var filters = {
+  toTime: function(value) {
+    var min = parseInt(value / 60)
+    var second = (parseInt(value) % 60)
+
+    if(min<10){
+      min="0"+min
+    }
+    if (second<10){
+      second = "0" + second
+    }
+    return min + ":" + second//转换时间
+  }
+}
+module.exports = {
+  toTime: filters.toTime
+}

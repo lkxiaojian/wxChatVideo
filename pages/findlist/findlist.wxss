@@ -1,0 +1,48 @@
+/* pages/findlist/findlist.wxss */
+
+.imageStyle {
+  height: 340rpx;
+  width: 100%;
+}
+
+.parent {
+  width: 100%;
+  background-color: white;
+  flex-flow: row wrap;
+  align-content: flex-start;
+    align-items: center;
+  justify-content: center;
+}
+
+.child {
+  box-sizing: border-box;
+  background-color: white;
+  flex: 0 0 44%;
+  height: 140px;
+  border: 1px solid white;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    text-align: center;
+}
+
+.text {
+  font-size: 0.7rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 15rpx;
+  padding-bottom: 15rpx;
+  padding-top: 15rpx;
+}
+
+.bacg{
+  background: rgba(0, 0, 0, 0.5);
+  position:absolute;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+    padding-bottom: 15rpx;
+  padding-top: 15rpx;
+}

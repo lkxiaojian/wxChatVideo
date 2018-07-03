@@ -1,0 +1,14 @@
+<!--pages/player/player.wxml-->
+<wxs module="filters" src="../index/index.wxs"></wxs>
+<view class='back'style="  background-image: url('../../images/timg.jpg');background-size:100% 100%;overflow:hidden;position:fixed; ">
+  <video style="height:340rpx;width:100%" src='{{playUrl[2]}}' binderror="videoErrorCallback" poster='{{playUrl[1]}}' autoplay='true'>
+</video>
+  <view class='text-title'>
+          <text class='text-properties'>{{playUrl[0]}}</text>
+          <view class='row'>
+            <text class='text-properties'>{{playUrl[3]}} / {{filters.toTime(playUrl[5])}}</text>
+          </view>
+        </view>
+        <text class='text-properties'>{{playUrl[4]}}</text>
+
+</view>

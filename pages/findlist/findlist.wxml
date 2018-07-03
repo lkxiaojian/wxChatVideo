@@ -1,0 +1,16 @@
+<wxs module="filters" src="../index/index.wxs"></wxs>
+<view>
+  <view class='parent'>
+    <block wx:for="{{resultlist}}" wx:for-item="item">
+      <view class='child' bindtap='findlistClick' data-index="{{index}}" style="background-image: url('{{item.data.cover.detail}}');background-size: 100% 100% ;  opacity:1; !important">
+        <view class='bacg'>
+          <text class='text' >{{item.data.title}}</text>
+          <view class='row'>
+            <text class='text'>{{item.data.category}} / {{filters.toTime(item.data.duration)}}</text>
+          </view>
+        </view>
+      </view>
+
+    </block>
+  </view>
+</view>

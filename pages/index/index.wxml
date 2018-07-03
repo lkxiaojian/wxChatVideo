@@ -1,0 +1,20 @@
+<wxs module="filters" src="./index.wxs"></wxs>
+<view class='hw-all'>
+  <block  wx:for="{{resultlist}}" wx:for-item="item">
+    <view bindtap="videoClick"  data-index="{{index}}">
+      <view class="image-video">
+        <image style="height:340rpx;width:100%" src="{{item.data.cover.detail}}"></image>
+      </view>
+      <view class="userinfo">
+        <image bindtap="bindViewTap" class="userinfo-avatar" mode="cover" src="{{item.data.author.icon}}"></image>
+        <view class='text-title'>
+          <text class='text-properties'>{{item.data.title}}</text>
+          <view class='row'>
+            <text class='text-properties'>发布于  {{item.data.category}} / {{filters.toTime(item.data.duration)}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+</view>

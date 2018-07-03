@@ -1,0 +1,30 @@
+/* pages/player/player.wxss */
+ .tab_con_img{
+  position: absolute;
+  top: 60rpx;
+  width: 690rpx;
+  border: 0rpx;
+  background-color: red;
+  height: 390rpx;
+}
+
+.text-title {
+  flex-direction: column;
+
+}
+
+.text-type {
+  flex-direction: row;
+}
+.text-properties {
+  font-size: 0.7rem;
+  color: #969696;
+  margin-left: 15rpx;
+  padding: 5rpx;
+}
+
+.back{
+
+  width: 100%;
+  height: 100%;
+}
