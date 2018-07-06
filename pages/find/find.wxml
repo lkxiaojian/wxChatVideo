@@ -2,6 +2,7 @@
   <block wx:for="{{resultlist}}" wx:for-item="item">
     <view class='child' bindtap='findClick' data-index="{{index}}" style="background-image: url('{{item.headerImage}}');background-size: 100% 100%">
       <text class='text'>{{item.name}}</text>
+	  
     </view>
   </block>
 </view>
